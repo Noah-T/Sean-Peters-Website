@@ -1,91 +1,106 @@
-.drop_cap{
-	font-size: 1.5em;
-}
-
-select {
-	margin: 40px 0 0 0;
-	width: 50%;	
-	max-width: 100px;
-}
-
-button {
-	width: 15%;
-	max-width: 50px;
-	margin-left: 35px;
-	text-align: center;
-}
-
-.nav ul {
-	margin: 20px 0;
-	height: 30px;
-	font-size: 1.5em;
-	width: 100%;
-}
-
-.nav {
-	text-align: center;
-	min-width: 100%;
-	max-width: 100%;
-	white-space: nowrap;
-}
-
-.nav a {
-	text-decoration: none;
-}
-.nav ul li {
-	padding: 5px;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 1em;
-	
-}
 .header_image {
-	
-	min-width: 100%;
-	max-width: 100%;
-	
-
-	
-}
-
-.current_page {
-	background: #EBF8FF;
-}
-
-.main_content {
-	
 	width: 100%;
+	max-height: 250px;
+}
+
+h1 {
+	margin-top: 5px;
+	font-family: bold;
+	text-align: center;
 	font-size: 1.5em;
+}
+
+div.nav li {
+	list-style: none;
+	text-align: center;
+	line-height: 1.25;
+}
+
+div.nav a {
+	color: black;
+	font-size: 3em;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+
+div.nav ul {
+	padding: 0;
+}
+
+h1, p {
+		font-family: "Open Sans", sans-serif;
+}
+p {
+	margin: 0 12px;
+}
+
+div.col_1 h1 {
+	margin-top: 25px;
+}
+
+div.col_1 h1, div.col_2 h1{
+	margin-bottom: 5;
+	font-weight: 700;
 }
 
 div.footer {
 	text-align: center;
+	color: gray;
 }
 
-.col_1, .col_2 {
-	max-width: 90%;
-	margin: 0 auto;
+.current_page {
+	text-decoration: underline;
+}
+
+/* 
+media page
+*/
+
+.media_gallery {
+	width: 100%;
+}
+.video_gallery, .music_gallery, .photo_gallery {
+	width: 100%;
+}
+
+.video_gallery{
+}
+
+.music_gallery iframe{
 	display: block;
+	margin: 0 auto;
 }
 
+.photo_gallery{
+	background: green;
+}
 
-h1 {
-		font-size: 1.8em;
-		text-align: center;
-		padding: 10px 0 0 0;
-		font-family: "Open Sans", sans-serif;
-	}
+div.video iframe {
+	display: block;
+	margin: 0 auto;
+}
 
-@media screen and (min-width: 600px) {
-	.col_1, .col_2 {
+div.video p {
+	display: block;
+	max-width: 300px;
+	display: block;
+margin: 0 auto;}
+
+@media screen and (min-width: 600px){
+	div.video {
 		display: inline-block;
-		width: 45%;
-		margin: 0 2%;
-		text-align: justify;
-		font-size: .8em;
+		margin-left: 40px;
 	}
 
-	.col_1 h1, .col_2 h1 {
-		text-align: center;
+	div.nav li {
+		float: left;
+		margin: 15px;
 	}
 }
+
+ 
+
+
+
+
